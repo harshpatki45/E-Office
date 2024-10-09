@@ -1,3 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+
 .logo{
   font-size: 32px;
   color: white;
@@ -92,7 +101,7 @@ a {
 .slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures image covers the box */
+  object-fit: cover; 
 }
 
 .slide.active {

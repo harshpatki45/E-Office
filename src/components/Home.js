@@ -4,22 +4,25 @@ import '../index.css';
 import Rajwada from "../Assets/Rajwada.png";
 import Foodhub from "../Assets/Foodhub.png";
 import image1 from "../Assets/image1.png";
+import pohaJalebi from "../Assets/poha-jalebi.png";
+import gandhiHall from "../Assets/gandhihall.png";
+import Lalbagh from "../Assets/lalbagh.png";
 
-const images = [Rajwada, Foodhub, image1];
+const images = [Rajwada, Foodhub, image1, pohaJalebi, gandhiHall, Lalbagh];
 
 
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Automatically change the image every 3 seconds
+ 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 3000); // Change image every 3 seconds
+    }, 3000); 
 
-    return () => clearInterval(interval); // Cleanup the interval on component unmount
+    return () => clearInterval(interval); 
   }, []);
 
   return (

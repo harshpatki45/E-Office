@@ -1,6 +1,8 @@
 import React from 'react'
-import '../index.css'
+import '../index.css';
 import logo from '../Assets/Emblem_of_IMC_Indore.jpg';
+
+
 
 
 function Navbar() {
@@ -12,10 +14,10 @@ function Navbar() {
 
         <nav className="navbar">
             <a href="/">Home</a>
-            <a href="/">Departments</a>
-            <a href="/">News & Events</a>
-            <a href="/">Login</a>
-            <a href="/">Help</a>
+            <a href="/department">Department</a>
+            <a href="/NewsandEvents">News & Events</a>
+            <a href="/login">Login</a>
+            <a href="/Help">Help</a>
 
         </nav>
         
